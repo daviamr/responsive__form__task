@@ -1,0 +1,211 @@
+/*default styles*/
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  --dark-blue-background: #293241;
+  --dark-blue-title: #253B51;
+  --light-blue-background: #BFD7E4;
+  --principal-red: #F67669;
+  --white: #FFFFFF;
+  --label-gray: #4E4958;
+  --span-label-gray: #C1BCCC;
+  --input-background-color: #FAFAFC;
+  --border-bottom-color: #E6E6F0;
+  --Poppins: 'Poppins', sans-serif;
+  --Staatliches: 'Staatliches', cursive;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-blue-background);
+}
+
+
+/* header style */
+.header__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px 0 48px 0;
+  background-color: var(--dark-blue-background);
+}
+
+.header__box__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__title {
+  font-family: var(--Staatliches);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--white);
+}
+
+.header__p {
+  font-family: var(--Poppins);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--white);
+}
+
+.header__box__content img {
+  margin-top: 24px;
+}
+
+/* section above the form */
+.personal__information__content {
+  background-color: var(--principal-red);
+  border-radius: 20px 20px 0px 0px;
+  margin-top: -16px;
+  width: 80%;
+  max-width: 750px;
+  padding: 24px 0;
+  text-align: center;
+}
+
+.personal__information__subtitle {
+  font-family: var(--Staatliches);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+  color: var(--white);
+}
+
+/*form style*/
+.global__fom__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__global__sections_box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+
+.form__box {
+  width: 80%;
+  max-width: 750px;
+  background-color: var(--white);
+}
+
+.form__box form {
+  padding: 30px 16px;
+}
+
+/* first section of form */
+
+.form__first__section,
+.form__second__section {
+  display: grid;
+  gap: 8px;
+}
+
+/* second section of form */
+
+.mentor__information__content {
+  text-align: center;
+  border-bottom: 1px solid #E6E6F0;
+  margin-bottom: 22px;
+}
+
+.mentor__information__subtitle {
+  font-family: var(--Staatliches);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+  color: var(--dark-blue-title);
+}
+
+
+
+/*label, input, textarea, select, checkbox styles*/
+.form__label {
+  display: block;
+  color: var(--label-gray);
+  font-family: var(--Poppins);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 24px;
+
+  user-select: none;
+  max-width: max-content;
+}
+
+.labelSpan {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form__label span,
+.form__input::placeholder,
+.form__textarea::placeholder {
+  font-size: 1rem;
+  color: var(--span-label-gray);
+}
+
+.form__input,
+.form_input__style {
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  padding: 8px 8px 8px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--border-bottom-color);
+  background: var(--input-background-color);
+}
+
+.form__select {
+  font-family: var(--Poppins);
+  color: var(--span-label-gray);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.form__select:hover {
+  color: var(--label-gray);
+}
+
+.form__textarea {
+  font-family: var(--Poppins);
+  min-height: 100px;
+  max-width: 100%;
+}
+
+.form__checkbox__wrapper {
+  display: flex;
+}
+
+/* Checkbox custom */
+.custom__checkbox input {
+  display: none;
+}
+
+.custom__checkbox input+span::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: var(--input-background-color);
+  border: 1px solid var(--dark-blue-title);
+  border-radius: 2px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+
+.custom__checkbox input:checked+span::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' fill='%23293241' viewBox='0 0 256 256'%3E%3Cpath d='M243.33,90.91,114.92,219.31a16,16,0,0,1-22.63,0l-71.62-72a16,16,0,0,1,0-22.61l24-24a16,16,0,0,1,22.57-.06l36.64,35.27.11.11h0l92.73-91.37a16,16,0,0,1,22.58,0l24,23.56A16,16,0,0,1,243.33,90.91Z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: cover;
+}
+
+/*submit form button style*/

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Me | Login</title>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+</head>
+
+<body>
+  <header>
+
+    <section class="header__section">
+      <div class="header__box__content">
+        <h1 class="header__title">Avalie a sua mentoria</h1>
+        <p class="header__p">Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img src="./assets/img/chat-stars.svg">
+      </div>
+    </section>
+
+  </header>
+
+  <main>
+    <div class="global__fom__box">
+      <div class="personal__information__content">
+        <h2 class="personal__information__subtitle">Informações pessoais</h2>
+      </div>
+      <section class="form__box">
+        <form>
+          <div class="form__global__sections_box">
+
+            <section class="form__first__section">
+
+              <div>
+                <label class="form__label" for="name">Nome</label>
+                <input class="form__input" type="text" id="name">
+
+              </div>
+              <div>
+                <label class="form__label" for="surname">Sobrenome</label>
+                <input class="form__input" type="text" id="surname">
+
+              </div>
+              <div>
+                <label class="form__label labelSpan" for="email">Email<span>(digite um email válido)</span></label>
+                <input class="form__input" placeholder="exemplo-seu@email.com" type="email" id="email">
+
+              </div>
+
+            </section>
+            <section class="form__second__section">
+              <div class="mentor__information__content">
+                <h2 class="mentor__information__subtitle">Informações do mentor</h2>
+              </div>
+
+              <div>
+                <label class="form__label" for="selectMentor">Selecione quem foi o seu mentor</label>
+                <select class="form__select form_input__style" id="selectMentor">
+                  <option value="" disabled selected style="display: none;">Selecione o mentor</option>
+                  <option class="option" value="">Maiky</option>
+                  <option value="">Bruna</option>
+                  <option value="">Luke</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="form__label" for="feedbackArea">Feedback sobre o mentor</label>
+                <textarea class="form__textarea form_input__style" id="feedbackArea"
+                  placeholder="Dê o seu Feedback sobre o mentor que você escolheu..."></textarea>
+              </div>
+
+              <label class="custom__checkbox form__checkbox__wrapper" for="checkbox">
+                <input type="checkbox" name="" id="checkbox" checked>
+                <span class="form__span__checkbox form__label">Todas as minhas dúvidas foram esclarecidas durante a
+                  mentoria.</span>
+              </label>
+
+            </section>
+
+            <h1>PARA O AMOR DA MINHA VIDA, RIROU BAIBE &hearts;</h1>
+
+          </div>
+        </form>
+
+        </button>
+      </section>
+    </div>
+
+  </main>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
