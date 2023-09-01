@@ -95,6 +95,8 @@ body {
   width: 80%;
   max-width: 750px;
   background-color: var(--white);
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 24px;
 }
 
 .form__box form {
@@ -104,25 +106,53 @@ body {
 /* first section of form */
 
 .form__first__section,
-.form__second__section {
+.form__second__section,
+.form__third__section {
   display: grid;
   gap: 8px;
 }
 
 /* second section of form */
 
-.mentor__information__content {
+.mentor__information__content,
+.next__consultation__content {
   text-align: center;
   border-bottom: 1px solid #E6E6F0;
   margin-bottom: 22px;
 }
 
-.mentor__information__subtitle {
+.mentor__information__subtitle,
+.next__consultation__subtitle {
   font-family: var(--Staatliches);
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 3.4rem;
   color: var(--dark-blue-title);
+}
+
+/* third section of form */
+
+.form__scheduling__wrapper {
+  display: grid;
+  gap: 4px;
+  grid-template-areas: "deQuando ateQuando"
+    "inputDeQuando inputAteQuando";
+}
+
+.das {
+  grid-area: deQuando;
+}
+
+.InputDas {
+  grid-area: inputDeQuando;
+}
+
+.ate {
+  grid-area: ateQuando;
+}
+
+.inputAte {
+  grid-area: inputAteQuando;
 }
 
 
@@ -178,7 +208,7 @@ body {
 .form__textarea {
   font-family: var(--Poppins);
   min-height: 100px;
-  max-width: 100%;
+  resize: vertical;
 }
 
 .form__checkbox__wrapper {
@@ -209,3 +239,18 @@ body {
 }
 
 /*submit form button style*/
+
+.form__submit__buton {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: var(--Staatliches);
+  line-height: 16px;
+  color: var(--white);
+
+  outline: none;
+  background-color: var(--principal-red);
+  border-radius: 8px;
+  border: none;
+  margin-top: 30px;
+  padding: 15px 0;
+}
