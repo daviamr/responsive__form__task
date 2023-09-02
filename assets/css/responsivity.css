@@ -1,0 +1,50 @@
+@media (min-width: 768px) {
+    .header__section {
+        padding: 48px 0 96px 0;
+    }
+
+    .header__title {
+        font-size: 3.6rem;
+    }
+
+    .header__p {
+        font-size: 1.6rem;
+    }
+
+    .personal__information__content {
+        margin-top: -48px;
+    }
+
+    .form__box {
+        margin-bottom: 72px;
+    }
+
+    .form__box form {
+        padding: 48px;
+    }
+
+    .form__first__section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .form__first__section>div:last-child {
+        grid-column: span 2;
+    }
+
+    .form__textarea {
+        min-height: 180px;
+    }
+
+    .form__label {
+        font-size: 1.4rem;
+    }
+
+    .form__label span {
+        font-size: 1.2rem;
+    }
+
+    .form__scheduling__wrapper {
+        grid-template-areas: 'deQuando ateQuando';
+    }
+}

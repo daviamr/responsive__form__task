@@ -1,8 +1,9 @@
-const inputs = document.getElementsByClassName('required')
+const inputs = document.getElementsByClassName('required');
 const form = document.getElementById('form');
-const submitButton = document.getElementById('submit');
+const subtitle = document.getElementById('subtitleTyping');
 
 
+//Validação dos campos 'nome', 'sobrenome' e 'email'
 validateField(0, nameValidate);
 
 function nameValidate() {
@@ -40,13 +41,13 @@ function emailValidate() {
     }
 }
 
-// Função para alterar o display e borda dos elementos dinamicamente
+//Função para alterar o display e borda dos elementos dinamicamente
 function fieldActions(index, displayValue, borderColor) {
     inputs[index].nextElementSibling.style.display = displayValue;
     inputs[index].style.border = '1px solid' + borderColor;
 }
 
-// Função responsável por chamar o evento 'keyup' nos campos
+//Função responsável por capturar o evento 'keyup' nos campos
 function validateField(index, func) {
     inputs[index].addEventListener('keyup', func);
 }

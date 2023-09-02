@@ -5,8 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Me | Login</title>
-  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
+  <link rel="stylesheet" href="./assets/css/responsivity.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
@@ -19,7 +21,7 @@
     <section class="header__section">
       <div class="header__box__content">
         <h1 class="header__title">Avalie a sua mentoria</h1>
-        <p class="header__p">Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <p class="header__p" id="subtitleTyping">Chegou a hora de avaliar o seu mentor. Bora lá?</p>
         <img src="./assets/img/chat-stars.svg">
       </div>
     </section>
@@ -91,15 +93,23 @@
               </div>
 
               <div>
-                <label class="form__label labelSpan" for="date">Data<span>(DD/MM/AAA)</span></label>
-                <input class="form__input required" type="date" id="date">
-              </div>
+                <div>
+                  <label class="form__label labelSpan" for="date">Data<span>(DD/MM/AAA)</span></label>
+                  <input class="form__input required" type="date" id="date">
+                </div>
 
-              <div class="form__scheduling__wrapper">
-                <label class="of form__label" for="fromWhen">Das</label>
-                <input class="ofInput form__input required" type="time" name="" id="fromWhen">
-                <label class="until form__label" for="untilWhen">Até</label>
-                <input class="untilInput form__input required" type="time" name="" id="untilWhen">
+                <div class="form__scheduling__wrapper">
+                  <div>
+
+                    <label class="of form__label" for="fromWhen">Das</label>
+                    <input class="ofInput form__input required" type="time" name="" id="fromWhen">
+                  </div>
+                  <div>
+                    <label class="until form__label" for="untilWhen">Até</label>
+                    <input class="untilInput form__input required" type="time" name="" id="untilWhen">
+
+                  </div>
+                </div>
               </div>
             </section>
 
