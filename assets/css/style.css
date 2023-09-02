@@ -139,19 +139,19 @@ body {
     "inputDeQuando inputAteQuando";
 }
 
-.das {
+.of {
   grid-area: deQuando;
 }
 
-.InputDas {
+.ofInput {
   grid-area: inputDeQuando;
 }
 
-.ate {
+.until {
   grid-area: ateQuando;
 }
 
-.inputAte {
+.untilInput {
   grid-area: inputAteQuando;
 }
 
@@ -253,4 +253,14 @@ body {
   border: none;
   margin-top: 30px;
   padding: 15px 0;
+  cursor: pointer;
+}
+
+/* validates span */
+
+.span__name__validate {
+  font-size: 1rem;
+  margin-top: 6px;
+  color: var(--principal-red);
+  display: none;
 }

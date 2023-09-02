@@ -32,24 +32,26 @@
         <h2 class="personal__information__subtitle">Informações pessoais</h2>
       </div>
       <section class="form__box">
-        <form>
+        <form id="submit">
           <div class="form__global__sections_box">
 
             <section class="form__first__section">
 
               <div>
                 <label class="form__label" for="name">Nome</label>
-                <input class="form__input" type="text" id="name">
+                <input class="form__input required" type="text" id="name">
+                <span class="span__name__validate">*O nome deve ter no mínimo 3 letras</span>
 
               </div>
               <div>
                 <label class="form__label" for="surname">Sobrenome</label>
-                <input class="form__input" type="text" id="surname">
+                <input class="form__input required" type="text" id="surname">
+                <span class="span__name__validate">*O sobrenome deve ter no mínimo 5 letras</span>
 
               </div>
               <div>
                 <label class="form__label labelSpan" for="email">Email<span>(digite um email válido)</span></label>
-                <input class="form__input" placeholder="exemplo-seu@email.com" type="email" id="email">
+                <input class="form__input required" placeholder="exemplo-seu@email.com" type="email" id="email">
 
               </div>
             </section>
@@ -60,7 +62,7 @@
               </div>
 
               <div>
-                <label class="form__label" for="selectMentor">Selecione quem foi o seu mentor</label>
+                <label class="form__label" for="selectMentor" id="select">Selecione quem foi o seu mentor</label>
                 <select class="form__select form_input__style" id="selectMentor">
                   <option value="" disabled selected style="display: none;">Selecione o mentor</option>
                   <option class="option" value="">Maiky</option>
@@ -88,19 +90,19 @@
               </div>
 
               <div>
-                <label class="form__label labelSpan">Data<span>(DD/MM/AAA)</span></label>
-                <input class="form__input" type="date" name="" id="">
+                <label class="form__label labelSpan" for="date">Data<span>(DD/MM/AAA)</span></label>
+                <input class="form__input required" type="date" id="date">
               </div>
 
               <div class="form__scheduling__wrapper">
-                <label class="das form__label" for="fromWhen">Das</label>
-                <input class="inputDas form__input" type="time" name="" id="fromWhen">
-                <label class="ate form__label" for="untilWhen">Até</label>
-                <input class="inputAte form__input" type="time" name="" id="untilWhen">
+                <label class="of form__label" for="fromWhen">Das</label>
+                <input class="ofInput form__input required" type="time" name="" id="fromWhen">
+                <label class="until form__label" for="untilWhen">Até</label>
+                <input class="untilInput form__input required" type="time" name="" id="untilWhen">
               </div>
             </section>
 
-            <button class="form__submit__buton" id="form">Salvar</button>
+            <button class="form__submit__buton" id="submit">Salvar</button>
 
           </div>
         </form>
