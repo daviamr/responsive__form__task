@@ -1,5 +1,6 @@
 const inputs = document.getElementsByClassName('required');
 const form = document.getElementById('form');
+const submit = document.getElementById('submit');
 const subtitle = document.getElementById('subtitleTyping');
 
 
@@ -40,6 +41,10 @@ function emailValidate() {
         fieldActions(2, 'none', '#E6E6F0');
     }
 }
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+})
 
 //Função para alterar o display e borda dos elementos dinamicamente
 function fieldActions(index, displayValue, borderColor) {
